@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Plebsu Shop</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.1.1/css/pro.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body style="display: block;">
+        
+        <div class="loading-screen">
+            <div class="music-container">
+                <div class="artist" id="artist">Louis Villain, Budda</div>
+                <div class="song" id="song">Pardon</div>
+                <div class="progress-bar">
+                    <div class="fill" id="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="loader">
+                <svg width="210" height="210" viewBox="0 0 210 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M210 105C210 162.99 162.99 210 105 210C47.0101 210 0 162.99 0 105C0 47.0101 47.0101 0 105 0C162.99 0 210 47.0101 210 105ZM18.522 105C18.522 152.76 57.2395 191.478 105 191.478C152.76 191.478 191.478 152.76 191.478 105C191.478 57.2395 152.76 18.522 105 18.522C57.2395 18.522 18.522 57.2395 18.522 105Z" fill="#D9D9D9"/>
+                    <path class="loader-animation" d="M200.739 105C205.854 105 210.042 100.846 209.592 95.7509C208.392 82.1802 204.559 68.9419 198.277 56.787C190.573 41.8834 179.411 29.0426 165.724 19.3402C152.037 9.63778 136.225 3.35622 119.611 1.02161C102.998 -1.31299 86.0668 0.36734 70.2362 5.92187C54.4056 11.4764 40.1364 20.7434 28.6238 32.9467C17.1112 45.15 8.69035 59.9344 4.06657 76.0614C-0.557213 92.1885 -1.24931 109.189 2.04824 125.638C4.73761 139.054 10.0168 151.785 17.5591 163.13C20.3907 167.389 26.2568 168.016 30.2502 164.82V164.82C34.2436 161.624 34.8428 155.819 32.0922 151.507C26.3547 142.512 22.3164 132.51 20.2089 121.998C17.4931 108.45 18.0631 94.4484 21.8712 81.1662C25.6794 67.8839 32.6148 55.7076 42.0966 45.6569C51.5783 35.6063 63.3304 27.974 76.3685 23.3993C89.4066 18.8245 103.351 17.4406 117.034 19.3634C130.717 21.2862 143.74 26.4597 155.012 34.4506C166.285 42.4415 175.478 53.0172 181.823 65.2918C186.746 74.8165 189.842 85.1491 190.983 95.7566C191.529 100.842 195.624 105 200.739 105V105Z" fill="#F893FF"/>
+                </svg>                   
+                <div class="tip">Nacisnij <span style="font-weight: bold;">SPACJA</span> aby wyciszyć muzykę!</div>
+            </div>
+
+            <div class="staff">
+                <div class="avatar" id="avatar"></div>
+                <div class="info">
+                    <div class="nickname" id="nickname">Gang Plebsu</div>
+                    <div class="staff-role" id="staff-role">Project Owner</div>
+                </div>
+            </div>
+
+            <div class="tips">
+                <div class="tips-title">Czy wiesz że..</div>
+                <div class="tips-text" id="tips-text">Plebsu TOP DEV</div>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="js/fivem.js"></script>
+
+</html>

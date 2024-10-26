@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    overflow: hidden;
+    font-family: 'Urbanist', 'sans-serif';
+    color: white;
+    font-size: 1vw;
+}
+
+.loading-screen {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background: url('tlo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    gap: 0.5vw;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-animation {
+    animation: rotate 10s linear infinite;
+    transform-origin: center;
+}
+
+.music-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1vw;
+    left: 50%;
+    transform: translate(-50%, 0.5vw);
+    background-color: #D9D9D926;
+    border: 0.3vw #FFFFFF33 solid;
+    border-radius: 1vw;
+    width: 30vw;
+    height: 7vw;
+}
+
+.artist {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.song {
+    font-size: 1vw;
+    font-weight: Medium;
+}
+
+.progress-bar {
+    margin-top: 1vw;
+    width: 90%;
+    height: 0.8vw;
+    border-radius: 5vw;
+    background-color: #FFFFFF;
+}
+
+.fill {
+    height: 100%;
+    width: 60%;
+    border-radius: 5vw;
+    background-color: #F893FF;
+}
+
+.staff {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+    transform: translate(-0.5vw, 0.5vw);
+    background-color: #D9D9D926;
+    border: 0.3vw #FFFFFF33 solid;
+    border-radius: 1vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+.avatar {
+    height: 4vw;
+    width: 4vw;
+    margin-left: 1vw;
+    border-radius: 100%;
+    background-image: url('https://cdn.discordapp.com/avatars/776795614402314240/aecaabbadd9c120221f078b6dbb1dfdd.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nickname {
+    font-weight: bold;
+}
+
+.staff-role {
+    font-size: 0.8vw;
+}
+
+.tips {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    transform: translate(-0.5vw, 0.5vw);
+    background-color: #D9D9D926;
+    border: 0.3vw #FFFFFF33 solid;
+    border-radius: 1vw;
+    width: 15vw;
+    height: 5vw;
+}
+
+.tips-title {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.tips-text {
+    font-size: 0.8vw;
+}
